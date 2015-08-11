@@ -7,6 +7,16 @@ errnum=0
 
 STR="     string     test"
 
+#Testing of a regular trim
+
 echocheck "trim $STR" "string"
+
+#Testing a no trimable string
+
+echocheck "trim string" "string"
+
+#Testing an empty string
+
+echocheck "trim " ""
 
 conclude "trim"
